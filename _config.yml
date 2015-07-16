@@ -1,0 +1,19 @@
+# Site settings
+title: Temu Kangen 10 Tahun IKA Smansa 2005
+email: me@novrian.info
+description: > # this means to ignore newlines until "baseurl:"
+  # Write an awesome description for your new site here. You can edit this
+  # line in _config.yml. It will appear in your document head meta (for
+  # Google search results) and in your feed.xml site description.
+  Media informasi acara Temu Kangan 10 Tahun IKA Smansa Makassar 2005
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: smansa2005
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+
+# SASS Settings
+sass:
+  style: :compressed
