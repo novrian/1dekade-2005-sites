@@ -52,6 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #banner .container {
   position: relative;
+
+  @media only screen and (min-width: $screen-tablet) {
+    top: 100px;
+  }
 }
 
 #banner .inner-container {
@@ -61,7 +65,6 @@ h1, h2, h3, h4, h5, h6 {
     @include border-radius(10px, 10px);
     @include single-box-shadow(0, 1px, 2px, null, #000);
     background-color: #fff;
-    margin: 100px 0 0;
     padding: 20px;
     text-align: left;
 
