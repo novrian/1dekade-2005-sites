@@ -7,10 +7,15 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: smansa2005
 github_username:  jekyll
+google_analytics: "UA-XXXX123456"
+gmap_API_key: "AIzaSyCyIrBEmqOb3Onm0pWmKAWtEeKmIwWngV0"
 
 # Build settings
 markdown: kramdown
 
 # SASS Settings
-sass:
-  style: :compressed
+# sass:
+#   style: :compressed
+
+gems:
+  - jekyll-compass

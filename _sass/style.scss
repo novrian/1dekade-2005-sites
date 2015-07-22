@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+$fa-font-path: "../fonts/fontawesome";
+
+// Bootstrap Vars
+$font-family-sans-serif: "Arimo", sans-serif;
+$font-family-serif: "Lobster Two", cursive;
+
+@import "compass";
+@import "bootstrap";
+@import "fontawesome/font-awesome";
+
+body {
+  position: relative;
+  padding-top: 50px;
+}
+
+.navbar-header h1 {
+  font-family: "Lobster", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: $screen-phone) {
+  .navbar-brand {
+    font-size: 32px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lobster Two", cursive;
+}
+
+#banner {
+  position: relative;
+  @media only screen and (min-width: $screen-tablet) {
+    padding: 0;
+    height: 500px;
+  }
+}
+
+#banner #map-container {
+  @include opacity(0.6);
+  position: absolute;
+  width: 100%;
+  height: 500px;
+
+  @media only screen and (max-width: $screen-tablet - 1) {
+    display: none !important;
+  }
+}
+
+#banner .container {
+  position: relative;
+}
+
+#banner .inner-container {
+  text-align: center;
+
+  @media only screen and (min-width: $screen-tablet) {
+    @include border-radius(10px, 10px);
+    @include single-box-shadow(0, 1px, 2px, null, #000);
+    background-color: #fff;
+    margin: 100px 0 0;
+    padding: 20px;
+    text-align: left;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 44px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 31px;
+      font-weight: 500;
+    }
+  }
+
+  @media only screen and (min-width: $screen-tablet) {
+    width: 580px;
+  }
+}
+
+#footer {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+p.footer-text {
+  font-size: 11px;
+  text-align: center;
+}

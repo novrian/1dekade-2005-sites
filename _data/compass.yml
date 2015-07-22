@@ -1,0 +1,9 @@
+---
+require:
+- jekyll-compass
+project_path: /home/k4k1-c0der/www/1dekade-2005-sites
+http_path: /
+css_dir: css
+sass_dir: _sass
+images_dir: images
+javascripts_dir: js

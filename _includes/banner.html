@@ -1,0 +1,30 @@
+<div id="banner" class="jumbotron">
+  <div id="map-container"></div>
+  <div class="container">
+    <div class="inner-container">
+      <h2>Temu Kangen 10 Tahun<br>IKA Smansa 2005 Makassar</h2>
+      <p class="jumbo-date">Sabtu, 26 September 2015</p>
+      <p class="jumbo-place">@ Pantai Akkarena, Tanjung Bunga</p>
+    </div>
+  </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ site.gmap_API_key }}"></script>
+<script>
+  function initialize() {
+    var mapOptions = {
+      zoom: 15,
+      center: new google.maps.LatLng(-5.1702366, 119.3747203)
+    };
+
+    var map = new google.maps.Map(document.getElementById('map-container'), mapOptions);
+
+    var myMarker = new google.maps.LatLng(-5.170404, 119.388111);
+    var marker = new google.maps.Marker({
+      position: myMarker,
+      title: "Pantai Akkarena",
+      map: map
+    });
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
