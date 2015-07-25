@@ -60,8 +60,9 @@ layout: front
   </ul>
   {% endif %}
 
-  {% if paginator.total_posts > 5 %}
   <div class="clearfix"></div>
+
+  {% if paginator.total_posts > 5 %}
   <a id="btn-list-berita" href="{{ "/berita/" | prepend: site.baseurl }}" class="btn btn-block btn-primary">Lihat Semua Berita</a>
   {% endif %}
 
