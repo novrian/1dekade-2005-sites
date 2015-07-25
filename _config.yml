@@ -4,11 +4,12 @@ email: me@novrian.info
 description: >
   Media informasi acara Temu Kangen 10 Tahun IKA Smansa Makassar 2005
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://smansa2005.org" # the base hostname & protocol for your site
 twitter_username: smansa2005
 github_username:  jekyll
 google_analytics: UA-65522870-1
 gmap_API_key: "AIzaSyCyIrBEmqOb3Onm0pWmKAWtEeKmIwWngV0"
+paginate: 5
 
 # Build settings
 markdown: kramdown
