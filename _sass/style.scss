@@ -3,8 +3,11 @@
 $fa-font-path: "../fonts/fontawesome";
 
 // Bootstrap Vars
+@import "bootstrap/variables"; // Import variable yang akan di timpa
 $font-family-sans-serif: "Arimo", sans-serif;
 $font-family-serif: "Lobster Two", cursive;
+$container-md: $container-sm;
+$container-lg: $container-sm;
 
 @import "compass";
 @import "bootstrap";
@@ -83,6 +86,20 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (min-width: $screen-tablet) {
     width: 580px;
   }
+}
+
+.post-list .post-meta {
+  font-size: 11px;
+  color: lighten($text-color, 20%);
+}
+
+.post-list h4 {
+  margin-top: 0;
+}
+
+#btn-list-berita {
+  width: 150px;
+  margin: 0 auto;
 }
 
 #footer {

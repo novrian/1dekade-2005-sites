@@ -33,7 +33,38 @@ layout: front
 
 <div id="berita" class="section">
   <h3>Berita</h3>
-  <p>-- Under Construction --</p>
+
+  <ul class="post-list col-md-6">
+    {% for post in site.posts limit:5 %}
+      <li>
+        <span class="post-meta">{{ post.date | date_to_string }}</span>
+
+        <h4>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h4>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.total_posts > 5 %}
+    <ul class="post-list col-md-6">
+    {% for post in site.posts limit:5 offset:5 %}
+      <li>
+        <span class="post-meta">{{ post.date | date_to_string }}</span>
+
+        <h4>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h4>
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if paginator.total_posts > 5 %}
+  <div class="clearfix"></div>
+  <a id="btn-list-berita" href="{{ "/berita/" | prepend: site.baseurl }}" class="btn btn-block btn-primary">Lihat Semua Berita</a>
+  {% endif %}
+
 </div>
 
 <hr>
