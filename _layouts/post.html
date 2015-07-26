@@ -12,4 +12,20 @@ layout: default
     {{ content }}
   </article>
 
+  <footer class="post-footer">
+    <p class="post-submission-info">Jika anda ingin mengirimkan berita, undangan, atau informasi yang lain. Silahkan kirim redaksi-nya ke <a href="mailto:info@smansa2005.org">info@smansa2005.org</a></p>
+
+    <nav class="post-pager">
+      <ul class="pager">
+        {% if page.previous != null %}
+        <li class="previous"><a href="{{ page.previous.url }}" title=""><span aria-hidden="true">&larr;</span> {{ page.previous.title | truncate: 40, "..." }}</a></li>
+        {% endif %}
+
+        {% if page.next != null %}
+        <li class="next"><a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title | truncate: 40, "..." }} <span aria-hidden="true">&rarr;</span></a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </footer>
+
 </div>
