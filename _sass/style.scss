@@ -97,6 +97,29 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
+.post .post-meta {
+  font-size: 11px;
+  color: lighten($text-color, 20%);
+}
+
+.post-content, .post-submission-info {
+  @media only screen and (min-width: $screen-tablet) {
+    font-size: 18px;
+  }
+}
+
+.post-submission-info {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid darken($gray-lighter, 10%);
+  background-color: $gray-lighter;
+  color: lighten($text-color, 20%);
+}
+
+.post-pager {
+  margin-top: 40px;
+}
+
 #btn-list-berita {
   width: 150px;
   margin: 0 auto;
