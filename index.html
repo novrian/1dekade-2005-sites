@@ -34,36 +34,42 @@ layout: front
 <div id="berita" class="section">
   <h3>Berita</h3>
 
-  <ul class="post-list col-md-6">
-    {% for post in site.posts limit:5 %}
-      <li>
-        <span class="post-meta">{{ post.date | date_to_string }}</span>
+  {% if site.posts.size > 0 %}
 
-        <h4>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h4>
-      </li>
-    {% endfor %}
-  </ul>
-
-  {% if paginator.total_posts > 5 %}
     <ul class="post-list col-md-6">
-    {% for post in site.posts limit:5 offset:5 %}
-      <li>
-        <span class="post-meta">{{ post.date | date_to_string }}</span>
+      {% for post in site.posts limit:5 %}
+        <li>
+          <span class="post-meta">{{ post.date | date_to_string }}</span>
 
-        <h4>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h4>
-      </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+          <h4>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h4>
+        </li>
+      {% endfor %}
+    </ul>
 
-  <div class="clearfix"></div>
+    {% if paginator.total_posts > 5 %}
+      <ul class="post-list col-md-6">
+      {% for post in site.posts limit:5 offset:5 %}
+        <li>
+          <span class="post-meta">{{ post.date | date_to_string }}</span>
 
-  {% if paginator.total_posts > 5 %}
-  <a id="btn-list-berita" href="{{ "/berita/" | prepend: site.baseurl }}" class="btn btn-block btn-primary">Lihat Semua Berita</a>
+          <h4>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h4>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div class="clearfix"></div>
+
+    {% if paginator.total_posts > 5 %}
+    <a id="btn-list-berita" href="{{ "/berita/" | prepend: site.baseurl }}" class="btn btn-block btn-primary">Lihat Semua Berita</a>
+    {% endif %}
+
+  {% else %}
+    <div class="alert alert-info"><strong>Maaf!</strong> Belum ada berita yang di publikasikan</div>
   {% endif %}
 
 </div>
