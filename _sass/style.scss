@@ -125,6 +125,89 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+ul.contact-list {
+  @include reset-box-model;
+  list-style: none;
+
+  li {
+    @include clearfix;
+    margin-top: 20px;
+  }
+}
+
+.contact-photo {
+  @media only screen and (max-width: $screen-phone - 1) {
+    margin: 0 auto 20px;
+    width: 150px;
+  }
+
+  @media only screen and (min-width: $screen-phone) {
+    float: left;
+    width: 100px;
+  }
+
+  img {
+    @include border-radius(200px, 200px);
+    width: 100%;
+  }
+}
+
+.contact-detail {
+  @media only screen and (min-width: $screen-phone) {
+    margin-left: 120px;
+  }
+}
+
+.contact-detail span.p-name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact-item {
+  display: block;
+
+  .contact-icon, .contact-value {
+    display: inline-block;
+  }
+
+  .contact-icon {
+    width: 40px;
+    font-weight: bold;
+
+    i[class~="fa"] {
+      font-size: 16px;
+    }
+  }
+}
+
+#line-qr {
+  margin-bottom: 20px;
+
+  @media only screen and (max-width: $screen-tablet) {
+    margin-top: 20px;
+    border-top: 1px solid $gray-lighter;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 200px;
+  }
+}
+
+#twitter-username {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p.site-info {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
 #footer {
   margin-top: 40px;
   padding-bottom: 40px;
