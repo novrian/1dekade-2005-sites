@@ -2,6 +2,7 @@
 title: Selamat Jalan Michael Palilu
 layout: post
 permalink: "selamat-jalan-mike"
+description: "Salah satu alumni III IPA 4 IKA Smansa 2005 Makassar yaitu Sdr. Michael Palilu telah meninggalkan dunia ini"
 ---
 <div class="center-block" style="max-width: 300px; margin-bottom: 20px;">
   <img src="{{ "/images/michael-palilu-01.jpg" | prepend: site.baseurl }}" alt="Michael Palilu - III IPA 4" class="img-rounded" style="max-width: 300px;">
