@@ -12,6 +12,9 @@ gmap_API_key: "AIzaSyCyIrBEmqOb3Onm0pWmKAWtEeKmIwWngV0"
 paginate: 5
 line_invite_url: "http://line.me/ti/g/fKLYi6eM3R"
 
+facebook:
+  app_id: "470817559751844"
+
 # Build settings
 markdown: kramdown
 

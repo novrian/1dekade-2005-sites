@@ -15,12 +15,25 @@
       {% endif %}
     </title>
 
+    <meta name="og:site_name" content="Website Resmi IKA Smansa 2005 Makassar">
+    <meta name="fb:app_id" content="{{ site.facebook.app_id }}">
+
     {% if page.description %}
       <meta name="description" content="{{ page.description }}">
+      <meta name="og:description" content="{{ page.description }}">
     {% else %}
       <meta name="description" content="{{ site.description }}">
+      <meta name="og:description" content="{{ site.description }}">
     {% endif %}
 
+    <meta name="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+    {% if page.title %}
+    <meta name="og:title" content="{{ page.title }} &mdash; {{ site.title }}">
+    {% else %}
+    <meta name="og:title" content="{{ site.title }}">
+    {% endif %}
+
+    <meta name="og:type" content="article">
 
     <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
