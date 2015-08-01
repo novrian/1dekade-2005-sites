@@ -15,6 +15,8 @@ Kabar terakhir yang kami terima adalah jenazah tiba di Makassar pada hari Jumat,
 Jenazah diperkirakan di berangkatkan ke Toraja untuk dimakamkan pada tanggal
 2 Agustus 2015.
 
-Untuk perkembangan selanjutnya akan diupdate di sini.
+Update terbaru:
+
+- Jenazah Mike akan dibawa ke Toraja untuk dimakamkan pada Minggu, 2 Agustus 2015 Malam. <small>_(01-08-2015)_</small>
 
 Terima Kasih.
