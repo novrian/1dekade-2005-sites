@@ -1,0 +1,19 @@
+---
+layout: page
+title: "Berita"
+description: "Daftar berita serba serbi informasi dari IKA Smansa 2005 Makassar"
+---
+
+{% if site.posts.size > 0 %}
+
+<ul class="post-list">
+    {% for post in site.posts %}
+    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+{% else %}
+
+<div class="alert alert-info"><strong>Maaf!</strong> Belum ada berita yang di publikasikan</div>
+
+{% endif %}
