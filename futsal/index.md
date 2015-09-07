@@ -15,8 +15,10 @@ Berikut daftar nama-nama pemain tim futsal IKA Smansa 2005 Makassar untuk <a hre
 7. Yudi Aditama _(Ude')_
 8. Muhammad Rinta _(Rinta)_
 9. Arief Rimba _(Rimba)_
+10. A. Sada Potto
+11. Ahmad Husain _(Ucenk)_
 
 Diharapkan pemain menyiapkan Fotocopy KTP & Ijazah SMA untuk kelengkapan berkas
 pendaftaran. Informasi latihan & sparing akan diupdate di halaman ini, jadi mohon
 di cek secara berkala. Untuk informasi lebih lanjut, silahkan hubungi Capt. Randi
-_(Kontak Nyusul)_.
+_( 08114111487 / 082221122187)_.
