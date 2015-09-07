@@ -88,6 +88,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#info ol {
+    li {
+        font-size: 18px;
+    }
+}
+
 .post-list .post-meta {
   font-size: 11px;
   color: lighten($text-color, 20%);
